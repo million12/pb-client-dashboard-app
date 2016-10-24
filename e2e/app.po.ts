@@ -1,11 +1,11 @@
 import { browser, element, by } from 'protractor';
 
-export class PbClientDashboardPage {
+export class PbClientDashboardAppPage {
   navigateTo() {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  getContainer() {
+    return element(by.css('.container'));
   }
 }

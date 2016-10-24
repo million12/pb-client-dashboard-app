@@ -1,14 +1,14 @@
-import { PbClientDashboardPage } from './app.po';
+import { PbClientDashboardAppPage } from './app.po';
 
-describe('pb-client-dashboard App', function() {
-  let page: PbClientDashboardPage;
+describe('pb-client-dashboard-app App', function() {
+  let page: PbClientDashboardAppPage;
 
   beforeEach(() => {
-    page = new PbClientDashboardPage();
+    page = new PbClientDashboardAppPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should have ".container" element', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getContainer()).toBeTruthy;
   });
 });
