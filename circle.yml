@@ -1,3 +1,9 @@
 machine:
   node:
     version: 6.6.0
+test:
+  pre:
+    - npm start:
+        background: true
+  post:
+    - npm run e2e
